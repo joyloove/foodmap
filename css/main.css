@@ -1,0 +1,33 @@
+:root {
+  --foodmap-red: #e55934;
+  --foodmap-red-hover: #ad3210;
+  --foodmap-orange: #fbb041;
+  --foodmap-blue: #0cb8bd;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.splash {
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #000000 0%, #d3d3d3 88%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #1e5799 0%,#000000 0%,#d3d3d3 88%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #1e5799 0%,#000000 0%,#d3d3d388%);
+}
+
+.splash-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*background-image: url('../assets/images/pizza-love.svg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-color {
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #3f3f3f 0%, #d3d3d3 88%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #1e5799 0%,#3f3f3f 0%,#d3d3d3 88%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #1e5799 0%,#3f3f3f 0%,#d3d3d3 88%);
+}
