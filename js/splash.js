@@ -1,3 +1,4 @@
+
 function fadeSplash() {
     setTimeout(function() {
       $('body').fadeOut(1000, function() {
@@ -5,4 +6,5 @@ function fadeSplash() {
       });
     }, 2000);
 }
+fadeSplash()
  //Splash function

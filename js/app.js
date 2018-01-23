@@ -6,7 +6,7 @@ $(document).ready(function() {
   searchBar.keyup(searchFilter);
   $('.caption').mouseover(showCaption).mouseout(hideCaption);
   $('.caption').click(fillModal);
-  cleanSearch();
+//cleanSearch();
 
   function displayRestaurants() { //append the restaurants in html
     $.each(restaurants, function(i) {
@@ -38,7 +38,7 @@ $(document).ready(function() {
     });
   }
 
-  function fillModal() { //append the data in modal 
+  function fillModal() { //append the data in modal
     $('.modal-title').text(data[$(this).parent().attr('id')].name);
     var url = 'https://www.google.com/maps/embed/v1/search?key=AIzaSyCn74gnTCijSi1vIkqgMfQMd8Z6hCk9zO4&q=restaurants+in+CDMX' + (data[$(this).parent().attr('id')].address).split(' ').join('+');
     $('.modal-body iframe').attr('src', url);
