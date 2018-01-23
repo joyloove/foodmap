@@ -5,3 +5,4 @@ function fadeSplash() {
       });
     }, 2000);
 }
+ //Splash function
