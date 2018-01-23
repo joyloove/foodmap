@@ -8,38 +8,40 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Pizza Love</title>
-  </head>
-  <body>
-    <header class="bg-color">
-      <p class="pizza-brand text-center">Pizza Love</p>
-    </header>
-    <main>
-      <section class="container-fliud">
-        <div class="row">
-          <div class="col-xs-12 map-container border-white">
-          <div id="map">
-          </div>
-          </div>
+
+<body>
+  <header class="bg-color">
+    <p class="pizza-brand text-center bg-color">Love Pizza</p>
+  </header>
+  <main>
+    <section id="map" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCn74gnTCijSi1vIkqgMfQMd8Z6hCk9zO4&q=restaurants+in+CDMX">
+          </iframe>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
     <section id="filter" class="container-fluid">
-      <h3 class="h3 text-center Pizza Love-main">Pide tu pizza</h3>
+      <h3 class="h3 text-center pizza-main">Pide tu pizza</h3>
       <form class="navbar-form navbar-left">
+
         <div class="form-group">
           <input type="text" id="search-bar" class="form-control" placeholder="Pizzerías cerca de ti">
         </div>
       </form>
     </section>
+
     <section id="results" class="container-fluid">
-     <div class="row">
-       <ul class="list-unstyled clearfix">
-       </ul>
-     </div>
-   </section>
-   <div class="modal fade" id="modal-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-     <div class="modal-dialog" role="document">
+      <div class="row">
+        <ul class="list-unstyled clearfix">
+        </ul>
+      </div>
+    </section>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -65,10 +67,11 @@
     </div>
   </main>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN9fIJsGwFpv7fQVsE2aftHxBYorlCa18&libraries=places"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/json.js"></script>
-    <script type="text/javascript" src="../js/app.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-aK_xp7OlSPeEJ3MVRRC4u05VNsyPlRE&libraries=places"></script>-->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/json.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+</body>
+
 </html>
