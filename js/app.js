@@ -13,7 +13,7 @@ $(document).ready(function() {
     if (window.location.href === 'https://joyloove.github.io/foodmap/') {
       setTimeout(function() {
         $('body').fadeOut(1000, function() {
-          window.location.href = 'views/pizza-love.html';
+         window.location.href = '../views/pizza-love.html';
         });
       }, 2000);
     }
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   function displayRestaurants() {
     $.each(restaurants, function(i) {
-      var restThumb = '<li class="collection col-xs-6 col-md-3"><a id=' + restaurants[i] + ' href="#" data-toggle="modal" data-target="#infoModal"><span class="caption"><span>' + data[restaurants[i]].name + '</span><img class="center-block" src="../assets/images/cutlery.svg" alt="Info"></span></a></li>';
+      var restThumb = '<li class="collection col-xs-6 col-md-3"><a id=' + restaurants[i] + ' href="#" data-toggle="modal" data-target="#infoModal"><span class="caption"><span>' + data[restaurants[i]].name + '</span><img class="center-block" src="../assets/images/spoon-01.svg" alt="Info"></span></a></li>';
       $('#results .row ul').append(restThumb);
       $('#' + restaurants[i]).css({
         'background-image': 'url(' + data[restaurants[i]].image + ')'});
