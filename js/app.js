@@ -2,22 +2,11 @@ $(document).ready(function() {
   var searchBar = $('#search-bar');
   var restaurants = Object.keys(data);
 
-  fadeSplash();
   displayRestaurants();
   searchBar.keyup(searchFilter);
   $('.caption').mouseover(showCaption).mouseout(hideCaption);
   $('.caption').click(fillModal);
   cleanSearch();
-
-  function fadeSplash() {
-    if (window.location.href === 'https://joyloove.github.io/foodmap/') {
-      setTimeout(function() {
-        $('body').fadeOut(1000, function() {
-          window.location.href = 'views/pizza-love.html';
-        });
-      }, 2000);
-    }
-  }
 
   function displayRestaurants() {
     $.each(restaurants, function(i) {
