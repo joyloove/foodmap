@@ -13,7 +13,7 @@ $(document).ready(function() {
     if (window.location.href === 'https://joyloove.github.io/foodmap/') {
       setTimeout(function() {
         $('body').fadeOut(1000, function() {
-         window.location.href = '../views/pizza-love.html';
+         window.location.href = 'views/pizza-love.html';
         });
       }, 2000);
     }
